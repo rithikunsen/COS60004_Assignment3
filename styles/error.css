@@ -1,0 +1,18 @@
+/* .error-message {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
+.error .error-message {
+  display: inline-block;
+} */
+.error {
+  /* margin-top: 10px; */
+  color: #af0c0c;
+  background-color: #ffe0e0;
+  padding: 8px;
+  display: none;
+}

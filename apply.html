@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Demonstrates some basic HTML form elements"
+    />
+    <meta name="keywords" content="HTML, Form, tags" />
+    <meta name="author" content="Rithikun Sen" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/error.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky">
+      <section class="top-nav">
+        <div>
+          <img src="images/job-search.png" alt="" width="50" />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <span class="menu-button"></span>
+        </label>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="jobs.html">Jobs</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="apply.html">Apply</a>
+          </li>
+          <li>
+            <a href="enhancements.html">Enhancements</a>
+          </li>
+          <li>
+            <a href="enhancements2.html">Enhancements 2</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="slider">
+          <img id="img-1" src="images/apply-job.svg" alt="" class="img-fluid" />
+          <img id="img-2" src="images/resume.svg" alt="" class="img-fluid" />
+          <img id="img-3" src="images/overview.svg" alt="" class="img-fluid" />
+        </div>
+        <div class="navigation-button">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <!-- <h1 class="font-weight-semibold">Apply Now</h1>
+        <h6 class="font-weight-normal text-muted">
+          Fill in your personal information to apply for job position
+        </h6>
+        <img
+          src="images/apply-job.svg"
+          alt=""
+          class="img-fluid"
+          width="477"
+          height="333"
+        /> -->
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <!-- Apply form -->
+        <form
+          id="applyForm"
+          method="post"
+          action="https://mercury.swin.edu.au/it000000/formtest.php"
+        >
+          <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+              <label for="ref">Job Reference Number</label>
+              <input
+                id="ref"
+                type="text"
+                name="ref"
+                pattern="[A-Za-z0-9-]+"
+                maxlength="5"
+              />
+            </p>
+            <p>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                maxlength="20"
+                pattern="^[a-zA-Z ]+$"
+              />
+            </p>
+            <p class="error fname-error"></p>
+            <p>
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                maxlength="20"
+                pattern="^[a-zA-Z ]+$"
+              />
+            </p>
+            <p class="error lname-error"></p>
+            <p>
+              <label for="dob">Date of Birth</label>
+              <input type="date" name="dob" id="dob" />
+            </p>
+            <p class="error dob-error"></p>
+            <fieldset id="gender">
+              <legend>Gender</legend>
+              <p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+              </p>
+            </fieldset>
+            <p class="error gender-error"></p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Address</legend>
+            <div>
+              <label for="staddr">Street Address</label>
+              <input type="text" name="staddr" id="staddr" maxlength="40" />
+              <p class="error staddr-error"></p>
+              <label for="town">Suburb/town</label>
+              <input type="text" name="town" id="town" maxlength="40" />
+              <p class="error town-error"></p>
+            </div>
+            <div>
+              <label for="state">State</label>
+              <select name="state" id="state">
+                <option value="">Please Select</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="OLD">OLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+              </select>
+              <p class="error state-error"></p>
+              <label for="postcode">Postcode</label>
+              <input type="text" name="postcode" id="postcode" maxlength="4" />
+            </div>
+            <p class="error postcode-error"></p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Contact Details</legend>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <p class="error email-error"></p>
+            </div>
+            <div>
+              <label for="pnumber">Phone number</label>
+              <input
+                type="text"
+                name="pnumber"
+                id="pnumber"
+                pattern="^[0-9 ]{8,12}$"
+              />
+              <p class="error pnumber-error"></p>
+            </div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Skills</legend>
+            <input
+              type="checkbox"
+              id="skill1"
+              name="skills[]"
+              value="Communication"
+            />
+            <label for="skill1"> Communication</label><br />
+            <input type="checkbox" id="test" name="skills[]" value="Teamwork" />
+            <label for="test"> Teamwork</label><br />
+            <input
+              type="checkbox"
+              id="skill3"
+              name="skills[]"
+              value="Problem solving"
+            />
+            <label for="skill3"> Problem solving</label><br />
+            <input
+              type="checkbox"
+              id="skill4"
+              name="skills[]"
+              value="Planning and organising"
+            />
+            <label for="skill4"> Planning and organising</label><br />
+            <input
+              type="checkbox"
+              id="skill5"
+              name="skills[]"
+              value="Self-management"
+            />
+            <label for="skill5"> Self-management</label>
+            <br />
+            <input
+              type="checkbox"
+              id="otherSkills"
+              name="skills[]"
+              value="Other skills..."
+            />
+            <label for="otherSkills">Other Skills...</label>
+            <p class="error skills-error"></p>
+            <br /><br />
+            <label for="other"> Other Skills:</label><br />
+            <textarea id="other" name="other" rows="4" cols="50"></textarea>
+            <p class="error other-error"></p>
+          </fieldset>
+          <div class="apply">
+            <input type="submit" value="Apply" id="submitBtn" />
+            <input type="reset" value="Reset Form" id="resetBtn" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/apply.js"></script>
+    <script src="./scripts/enchancements.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Demonstrates some basic HTML form elements"
+    />
+    <meta name="keywords" content="HTML, Form, tags" />
+    <meta name="author" content="Rithikun Sen" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body id="homepage">
+    <!-- Navigation -->
+    <nav class="navbar sticky">
+      <section class="top-nav">
+        <div>
+          <img src="images/job-search.png" alt="" width="50" />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <span class="menu-button"></span>
+        </label>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="jobs.html">Jobs</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="apply.html">Apply</a>
+          </li>
+          <li>
+            <a href="enhancements.html">Enhancements</a>
+          </li>
+          <li>
+            <a href="enhancements2.html">Enhancements 2</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <h1 class="font-weight-semibold">Join Our Team</h1>
+        <h6 class="font-weight-normal text-muted">
+          "Transforming businesses through technology."
+        </h6>
+        <div>
+          <button
+            onclick="window.location.href = 'apply.html'"
+            class="btn-banner-apply"
+          >
+            Apply
+          </button>
+          <button class="btn-banner-learn">Learn more</button>
+        </div>
+        <img src="images/banner.svg" alt="" class="img-fluid" />
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <!-- Section 1 -->
+        <section class="about-us">
+          <div class="row justify-content-center">
+            <div
+              class="col-6 col-s-9 flex-direction-column justify-content-center content-header"
+            >
+              <h1>About Us</h1>
+              <p>
+                We are an IT solution company specializing in providing
+                comprehensive and innovative technology solutions to businesses
+                of all sizes. Our team of experienced professionals is dedicated
+                to delivering cutting-edge services such as software
+                development, cloud computing, network security, data analytics,
+                and more. We understand the importance of leveraging technology
+                to drive growth and efficiency in today's fast-paced business
+                landscape, and we are committed to helping our clients achieve
+                their goals through tailored solutions that meet their unique
+                needs.
+              </p>
+            </div>
+            <div class="col-5 col-s-9">
+              <img src="images/right-image.png" alt="" class="full-width" />
+            </div>
+          </div>
+          <div class="row justify-content-center col-reverse content-header">
+            <div class="col-5 col-s-9">
+              <img src="images/left-image.png" alt="" class="full-width" />
+            </div>
+            <div
+              class="col-6 col-s-9 flex-direction-column justify-content-center"
+            >
+              <h1>Our Mission</h1>
+              <p>
+                Our mission as an IT solution company is to empower businesses
+                with technology by providing innovative and customized solutions
+                that drive growth, efficiency, and competitive advantage. We
+                believe that technology is a powerful tool that can transform
+                the way businesses operate and we are committed to helping our
+                clients leverage it to achieve their goals. Our team of experts
+                is dedicated to delivering top-quality services that are
+                tailored to the specific needs of each client, while also
+                providing exceptional customer service and support. Our ultimate
+                goal is to become a trusted partner and advisor to our clients
+                as they navigate the ever-changing technology landscape.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- section 2 -->
+        <section class="job-cetegory">
+          <div class="content-header">
+            <h1>Most Demanded Job Categories</h1>
+            <h6 class="font-weight-normal text-muted">
+              Here are the most demanded job categories in our company.
+            </h6>
+          </div>
+          <div class="row">
+            <div
+              class="row justify-content-between box-shadow justify-content-center"
+            >
+              <article class="col-2 col-s-7">
+                <img
+                  src="images/coding.png"
+                  alt="Random Name"
+                  class="img-fluid"
+                />
+                <p>Web Development</p>
+              </article>
+              <article class="col-2 col-s-7">
+                <img
+                  src="images/mobile.png"
+                  alt="Random Name"
+                  class="img-fluid"
+                />
+                <p>Mobile App Development</p>
+              </article>
+              <article class="col-2 col-s-7">
+                <img
+                  src="images/data-science.png"
+                  alt="Random Name"
+                  class="img-fluid"
+                />
+                <p>Data Scientist</p>
+              </article>
+              <article class="col-2 col-s-7">
+                <img
+                  src="images/hack.png"
+                  alt="Random Name"
+                  class="img-fluid"
+                />
+                <p>Cyber Security</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- section 3 -->
+        <section class="apply-job">
+          <div class="content-header">
+            <h1>How To Apply for Jobs</h1>
+            <h6 class="font-weight-normal text-muted">
+              Here are some simple step on how to apply for jobs.
+            </h6>
+          </div>
+          <article>
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="circle">01</div>
+                <p>
+                  <strong> Identify Job Openings:</strong>
+                  Look for job openings that match your skills and
+                  qualifications. You can search for jobs through various job
+                  search websites, company websites, and social media
+                  platforms..
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="circle">02</div>
+                <p>
+                  <strong> Prepare Your Application:</strong>
+                  Once you have identified job openings, prepare your job
+                  application by tailoring your resume and cover letter to the
+                  job description. Make sure your application highlights your
+                  relevant experience and qualifications for the position.
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="circle">03</div>
+                <p>
+                  <strong> Submit Your Application:</strong>
+                  Submit your job application through the appropriate channels.
+                  This may include submitting your application through an online
+                  job portal, email, or by mailing a physical copy.
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="circle">04</div>
+                <p>
+                  <strong> Follow Up:</strong>
+                  Follow up with the employer to confirm that they received your
+                  application and to express your continued interest in the
+                  position. This can be done through email or a phone call. If
+                  you are selected for an interview, be sure to prepare for it
+                  thoroughly and be ready to showcase your skills and
+                  qualifications.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- section 4 -->
+        <section class="contact-us">
+          <div class="content-header">
+            <h1>Contact Us</h1>
+            <h6 class="font-weight-normal text-muted">Get in Touch</h6>
+          </div>
+          <div class="row flex-direction-row justify-content-center">
+            <div class="col-3 text-align-center">
+              <img
+                src="images/telephone-call.png"
+                alt=""
+                width="80"
+                height="80"
+              />
+              <h4>Phone</h4>
+              <p><span class="u-icon"></span>&nbsp;​+61 468995171</p>
+            </div>
+            <div class="col-3 text-align-center">
+              <img src="images/map.png" alt="" width="80" height="80" />
+              <h4>Australia</h4>
+              <p>Melbourne VIC 3000</p>
+            </div>
+            <div class="col-3 text-align-center">
+              <img src="images/message.png" alt="" width="80" height="80" />
+              <h4>Chart to us</h4>
+              <p>
+                <a href="mailto:103800533@student.swin.edu.au">Rithikun Sen</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>
+        &copy;<a class="school" href="https://www.swinburne.edu.au/"
+          >Swinburne University of Technology</a
+        >
+      </p>
+      <p>
+        Mark up by:
+        <a href="mailto:103800533@student.swin.edu.au">Rithikun Sen</a>
+      </p>
+    </footer>
+  </body>
+</html>

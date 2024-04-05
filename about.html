@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Demonstrates some basic HTML form elements"
+    />
+    <meta name="keywords" content="HTML, Form, tags" />
+    <meta name="author" content="Rithikun Sen" />
+    <title>About me</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar sticky">
+      <div class="top-nav">
+        <div>
+          <img src="images/job-search.png" alt="" width="50" />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <span class="menu-button"></span>
+        </label>
+        <ul class="menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="jobs.html">Jobs</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="apply.html">Apply</a>
+          </li>
+          <li>
+            <a href="enhancements.html">Enhancements</a>
+          </li>
+          <li>
+            <a href="enhancements2.html">Enhancements 2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <h1 class="font-weight-semibold">About Me</h1>
+        <h6 class="font-weight-normal text-muted">
+          This is information about myself
+        </h6>
+        <img
+          src="images/about-me.svg"
+          alt=""
+          class="img-fluid"
+          width="477"
+          height="333"
+        />
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <!-- Section 1 -->
+        <section id="profile">
+          <div class="row full-width">
+            <div class="col-8">
+              <div class="profile_detail">
+                <h2>Personal Info</h2>
+                <dl>
+                  <dt class="profile_name">Rithikun Sen</dt>
+                  <dt>Student ID:</dt>
+                  <dd>103800533</dd>
+                  <dt>Tutor:</dt>
+                  <dd>Jingwen Zhou</dd>
+                  <dt>Course:</dt>
+                  <dd>Master of Information Technology</dd>
+                  <dt>Email:</dt>
+                  <dd>
+                    <a href="mailto:103800533@student.swin.edu.au"
+                      >103800533@student.swin.edu.au</a
+                    >
+                  </dd>
+                  <dt>Number:</dt>
+                  <dd>+61 46 899 5171</dd>
+                  <dt>LinkedIn:</dt>
+                  <dd>
+                    <a href="https://www.linkedin.com/in/rithikunsen/"
+                      >Rithikun Sen</a
+                    >
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="col-3 justify-content-center">
+              <figure>
+                <img class="profile_img" src="images/myself.jpg" alt="Avatar" />
+                <figcaption>Rithikun Sen</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- Section 2 -->
+        <section>
+          <h2>About Me</h2>
+          <dl>
+            <dt></dt>
+            <dd>
+              Hi, I’m Rithikun Sen a freshly graduated student in the Department
+              of Information Systems at Paragon International University and
+              currently pursuing a master's degree in Information Technology at
+              Swinburne University of Technology. Aiming to improve my knowledge
+              of programming to obtain a position that will enable me to use my
+              strong organizational skills, award-winning educational
+              background, and ability to work well with people.
+            </dd>
+          </dl>
+        </section>
+        <!-- Section 3 -->
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>
+              Master of Information Technology, Swinburne University of
+              Technology, Melbourne, Australia
+            </li>
+            <li>
+              Postgraduate Qualifying Program, Swinburne University of
+              Technology, Melbourne, Australia
+            </li>
+            <li>
+              Bachelor of Management of Information Systems, Paragon
+              International University, Phnom Penh, Cambodia
+            </li>
+            <li>
+              General English Program, Australia Centre of Education (ACE),
+              Phnom Penh, Cambodia
+            </li>
+            <li>
+              High School Diploma, Zaman International School, Phnom Penh,
+              Cambodia
+            </li>
+          </ul>
+        </section>
+        <!-- Section 4 -->
+        <section>
+          <h2>Class Timetable</h2>
+          <table id="timetable">
+            <tr>
+              <th>Day/Period</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+            <tr>
+              <th>8:00-8:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>8:30-9:00</th>
+              <td></td>
+              <td></td>
+              <td rowspan="4" class="project">
+                <p>
+                  <strong>COS60010</strong>
+                </p>
+                <p>
+                  <strong>Workshop 1</strong>
+                </p>
+                <p>Hawthorn EN409</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>9:00-9:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>9:30-10:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>10:00-10:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>10:30-11:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="2" class="software">
+                <p>
+                  <strong>COS022</strong>
+                </p>
+                <p>
+                  <strong>Class 1</strong>
+                </p>
+                <p>Hawthorn EN409</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>11:00-11:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>11:30-12:00</th>
+              <td></td>
+              <td rowspan="2" class="project">
+                <p>
+                  <strong>COS60010</strong>
+                </p>
+                <p>
+                  <strong>Live Online Lecture</strong>
+                </p>
+                <p>Hawthorn Online</p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>12:00-12:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>12:30-1:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>1:00-1:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>1:30-2:00</th>
+              <td></td>
+              <td></td>
+              <td rowspan="4" class="data">
+                <p>
+                  <strong>COS60009</strong>
+                </p>
+                <p>
+                  <strong>Live Online Lecture</strong>
+                </p>
+                <p>Hawthorn Online</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>2:00-2:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>2:30-3:00</th>
+              <td></td>
+              <td rowspan="2" class="software">
+                <p>
+                  <strong>COS022</strong>
+                </p>
+                <p>
+                  <strong>Live Online Lecture</strong>
+                </p>
+                <p>Hawthorn Online</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>3:00-3:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>3:30-4:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>4:00-4:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>4:30-5:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>5:00-5:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>5:30-6:00</th>
+              <td class="web" rowspan="4">
+                <p>
+                  <strong>COS60004</strong>
+                </p>
+                <p>
+                  <strong>Live Online Lecture</strong>
+                </p>
+                <p>Hawthorn Online</p>
+              </td>
+              <td></td>
+              <td rowspan="2" class="data">
+                <p>
+                  <strong>COS60009</strong>
+                </p>
+                <p>
+                  <strong>Class 1</strong>
+                </p>
+                <p>Hawthorn BA404</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>6:00-6:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>6:30-7:00</th>
+              <td class="web" rowspan="4">
+                <p>
+                  <strong>COS60004</strong>
+                </p>
+                <p>
+                  <strong>Class 1</strong>
+                </p>
+                <p>Hawthorn BA404</p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>7:00-7:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>7:30-8:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>8:00-8:30</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>
+        &copy;<a class="school" href="https://www.swinburne.edu.au/"
+          >Swinburne University of Technology</a
+        >
+      </p>
+      <p>
+        Mark up by:
+        <a href="mailto:103800533@student.swin.edu.au">Rithikun Sen</a>
+      </p>
+    </footer>
+  </body>
+</html>
